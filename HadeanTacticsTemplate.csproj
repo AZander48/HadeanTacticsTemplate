@@ -2,9 +2,9 @@
 
   <!-- 
   Imports local path properties only if present in order to allow CI builds. The file should be gitignored.
-  Copy DebuggingAdventures.props.example to DebuggingAdventures.props and set your game install path.
+  Copy HadeanTacticsTemplate.props.example to HadeanTacticsTemplate.props and set your game install path.
   -->
-  <Import Condition="Exists('DebuggingAdventures.props')" Project="DebuggingAdventures.props" />
+  <Import Condition="Exists('HadeanTacticsTemplate.props')" Project="HadeanTacticsTemplate.props" />
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -41,6 +41,10 @@
     </Reference>
     <Reference Include="Unity.InputSystem" Condition="Exists('$(HadeanTacticsManaged)\Unity.InputSystem.dll')">
       <HintPath>$(HadeanTacticsManaged)\Unity.InputSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI" Condition="Exists('$(HadeanTacticsManaged)\UnityEngine.UI.dll')">
+      <HintPath>$(HadeanTacticsManaged)\UnityEngine.UI.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
