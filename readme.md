@@ -2,7 +2,7 @@
 
 Minimal BepInEx 5 plugin template for [Hadean Tactics](https://store.steampowered.com/app/1324530/Hadean_Tactics/).
 
-Use this repo as a starting point for a new mod. For a more complete example with input handling and an in-game config menu, see [DebuggingAdventures](../DebuggingAdventures).
+Use this repo as a starting point for a new mod. For a more complete example with input handling and an in-game config menu, see [DebuggingAdventures](https://github.com/AZander48/DebuggingAdventures) and [HadeanTacticsExamplesMod](https://github.com/AZander48/HadeanTacticsExamplesMod).
 
 ## Prerequisites
 

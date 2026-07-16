@@ -47,6 +47,14 @@
       <HintPath>$(HadeanTacticsManaged)\UnityEngine.UI.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <reference Include="Unity.TextMeshPro" Condition="Exists('$(HadeanTacticsManaged)\Unity.TextMeshPro.dll')">
+      <HintPath>$(HadeanTacticsManaged)\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </reference>
+    <Reference Include="UnityEngine.IMGUIModule" Condition="Exists('$(HadeanTacticsManaged)\UnityEngine.IMGUIModule.dll')">
+      <HintPath>$(HadeanTacticsManaged)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 
   <Target Name="CopyMod" AfterTargets="PostBuildEvent" Condition="'$(HadeanTacticsDir)' != ''">
